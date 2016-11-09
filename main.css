@@ -1,0 +1,299 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Questrial|Ubuntu+Mono');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Questrial', 'Verdana', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Crete Round', 'Georgia', serif;
+    color: white;
+    padding-top: 10px;
+}
+h2{
+    font: bold 2.618rem 'Crete Round', 'Georgia', serif;
+    color: black;
+}
+li, p, a{
+    font: bold 1.618rem 'Questrial', 'Verdana', sans-serif;
+    text-decoration: none;
+    
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Ubuntu Mono', 'Courier New', monospace; 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+body {
+    background-color: rgb(169,169,169);
+    
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    
+    background-image: url(http://baconmockup.com/700/200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav{
+    width: 100%;
+}
+nav>ul{
+    border: 3px solid black;
+    width: 100%;
+    background-color: bisque; 
+}
+nav li{
+    width: 100%;
+    list-style: none;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'Verdana', sans-serif;
+    text-align: center;
+    color: black;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: black;
+    color: bisque;
+    transition: background 0.5s ease-out;
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    color: brown;
+}
+.col img{
+    border: 3px solid black;
+    align-content: center;
+    display: block;
+    width: 95%;
+    max-height: 300px;
+    margin: 10px;
+    background-color: azure;
+}
+
+footer, a {
+    color: darkgoldenrod;
+    list-style: none;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+@media screen and (min-width:600px) {
+    .wrapper {
+        width: 100%;
+        height:auto;
+        background: rgb(169,169,169);
+        text-align: center;
+    }
+    
+    h1{
+        word-spacing: normal;
+    }
+    nav{
+        width:90%
+    }
+    
+    nav ul {
+         height: 60px;
+        border-left: none;
+    }
+    
+    nav li {
+        background-color: bisque;
+        border: none;
+    }
+   
+    .link{
+        display:inline-block;
+        width:20%;
+        float:left;
+    }
+    .main{
+        width:90%;
+        margin: 0 auto;
+        
+    }
+    .col{
+        float:left;
+        width:48%;
+        text-align: left;
+    }
+    .col img{
+        display: inline-block;
+        float: left;
+        width:60%;
+        height:auto;
+        max-width: 60%;
+        margin-right:10px;
+        line-height: 1;
+    }
+    .footer{
+        width:90%;
+        float:left;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+    width: 100%;
+    }
+    nav{
+        width:90%
+    }
+    
+    .col p {
+        font-size: 130%;
+    }
+    .link{
+        display:inline-block;
+        width:20%;
+        float:left;
+    }
+    .main{
+        width:90%;
+        overflow:hidden;
+    }
+    .col{
+        display:inline-block;
+        float:left;
+    }
+    .first{
+        margin-right:2%;
+    }
+    .col img{
+        display: inline;
+        width:50%;
+        height:auto;
+        max-width: 50%;
+        margin-right:10px;
+    }
+    .footer{
+        display:block;
+        width:100%;
+        text-align: center;  
+        background:blanchedalmond;
+        float:left;
+    }
+    .footer li a{
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+    .col p {
+        font-size: 120%;
+    }
+    
+    nav li {
+        border-bottom: 3px solid black;
+        height: auto;
+    }
+    
+    nav ul {
+        height: 363px;
+    }
+    
+    nav{
+        width:30%;
+        float:left;
+        clear:bottom;
+    }
+    .link{
+        display:block;
+        width:100%;
+        margin: 10px 0 10px 0;
+        padding:10px;
+    }
+    .main{
+        width:70%;
+        margin:0;
+    }
+    .col{
+        float:left;
+        width:40%;
+        margin-left: 60px;
+        
+    }
+    .first{
+        margin-right:2.5%;
+        margin-left:2.5%;
+    }
+    .col img{
+        display: inline-block;
+        width:55%;
+        height:auto;
+        max-width: 55%;
+        margin-right: 10px;
+        line-height: 1;
+    }
+
+}
