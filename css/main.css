@@ -23,7 +23,7 @@ Colour scheme
     box-sizing: border-box;
 }
 html{
-    font-size: 16px;
+    font-size: 1.0rem;
     line-height: 1.6;
     font-family: 'Questrial', 'Verdana', sans-serif;
 }
@@ -155,12 +155,13 @@ footer{
     h1{
         word-spacing: normal;
     }
+    
     nav{
         width:90%
     }
     
     nav ul {
-         height: 60px;
+        height: 60px;
         border-left: none;
     }
     
@@ -174,16 +175,19 @@ footer{
         width:20%;
         float:left;
     }
+    
     .main{
         width:90%;
         margin: 0 auto;
         
     }
+    
     .col{
         float:left;
         width:48%;
         text-align: left;
     }
+    
     .col img{
         display: inline-block;
         float: left;
@@ -193,6 +197,7 @@ footer{
         margin-right:10px;
         line-height: 1;
     }
+    
     .footer{
         width:90%;
         float:left;
@@ -201,46 +206,54 @@ footer{
 
 @media screen and (min-width: 800px) {
     .wrapper {
-    width: 100%;
+        width: 100%;
     }
-    nav{
+    
+    nav {
         width:90%
     }
     
     .col p {
         font-size: 130%;
     }
-    .link{
+    
+    .link {
         display:inline-block;
         width:20%;
         float:left;
     }
-    .main{
+    
+    .main {
         width:90%;
         overflow:hidden;
     }
-    .col{
+    
+    .col {
         display:inline-block;
         float:left;
     }
-    .first{
+    
+    .first {
         margin-right:2%;
     }
-    .col img{
+    
+    .col img {
         display: inline;
         width:50%;
         height:auto;
         max-width: 50%;
         margin-right:10px;
     }
-    .footer{
+    
+    .footer {
         display:block;
         width:100%;
         text-align: center;  
         background:blanchedalmond;
         float:left;
     }
-    .footer li a{
+    
+    .footer li a {
         width:100%;
     }
 }
@@ -249,6 +262,7 @@ footer{
     .wrapper {
         width: 100%;
     }
+    
     .col p {
         font-size: 120%;
     }
@@ -262,32 +276,37 @@ footer{
         height: 363px;
     }
     
-    nav{
+    nav {
         width:30%;
         float:left;
         clear:bottom;
     }
-    .link{
+    
+    .link {
         display:block;
         width:100%;
         margin: 10px 0 10px 0;
         padding:10px;
     }
-    .main{
+    
+    .main {
         width:70%;
         margin:0;
     }
-    .col{
+    
+    .col {
         float:left;
         width:40%;
         margin-left: 60px;
         
     }
-    .first{
+    
+    .first {
         margin-right:2.5%;
         margin-left:2.5%;
     }
-    .col img{
+    
+    .col img {
         display: inline-block;
         width:55%;
         height:auto;
@@ -295,5 +314,7 @@ footer{
         margin-right: 10px;
         line-height: 1;
     }
+    
+    
 
 }
